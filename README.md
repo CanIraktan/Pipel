@@ -85,4 +85,4 @@ Performance tests have not yet been carried out
 
 ## License
 Copyright (c) 2023 Can Iraktan. All rights reserved  
-This repository is licensed under  MIT License - see [`License`](LICENSE) for more details.
+This repository is licensed under  MIT License - see [`License`](License.txt) for more details.
