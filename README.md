@@ -1,7 +1,3 @@
-[![GitHub release][release-img]][release]
-[![License][license-img]][license]
-![Downloads][download]
-
 # Pipel
 
 MIT License
