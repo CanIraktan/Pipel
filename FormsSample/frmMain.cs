@@ -58,13 +58,13 @@ namespace FormsSample
                 txtMessages.AppendText(ex.Message + Environment.NewLine);
             }
         }
-
+        
         // Send a Text Message
         private void btnSend_Click(object sender, EventArgs e)
         {
             PipeCommand.Send(PipeMessageTypes.ShowMessage, txtMesssage.Text, txtReceiverName.Text);
         }
-
+        
         //Send a Object
         private void btnSendObject_Click(object sender, EventArgs e)
         {
