@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pipel", "Pipel\Pipel.csproj", "{5F4FE7C8-6F66-4067-BD49-7A2C04A7D798}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F4FE7C8-6F66-4067-BD49-7A2C04A7D798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4FE7C8-6F66-4067-BD49-7A2C04A7D798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4FE7C8-6F66-4067-BD49-7A2C04A7D798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4FE7C8-6F66-4067-BD49-7A2C04A7D798}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {550FA531-01B0-4B49-B5D0-FFA4FC3288B0}
+	EndGlobalSection
+EndGlobal
