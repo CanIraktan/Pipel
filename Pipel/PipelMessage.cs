@@ -4,7 +4,7 @@ using Serialize;
 
 namespace Pipel
 {
-    public class PipelMessage
+    public class PipelMessage : IDisposable
     {
         public object Load { get; set; }
         [JsonProperty]

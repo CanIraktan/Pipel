@@ -45,7 +45,8 @@ namespace FormsSample
                 }
                 else
                 {
-                    PipeCommand cm = PipeCommand.GetCommand(message);
+                    PipeCommand cm = message.ConvertLoad<PipeCommand>();
+                    //PipeCommand cm = PipeCommand.GetCommand(message);
 
                     if(cm.Type == PipeMessageTypes.TakePhoto)
                         txtMessages.AppendText(DateTime.Now.ToLongTimeString() + ":(Object) " + cm.ConvertLoad<List<int>>() + Environment.NewLine);
