@@ -25,34 +25,29 @@ PipelEngine.Receive += PipelMessageReceived;
 
 Receive Method Sample (PipeCommand is a custom object used in the sample application)
 ```csharp
-private void PipelMessageReceived(PipelMessage message)
+private void PipeMessageReceived(PipelMessage message)
 {
     try
     {
         if(this.InvokeRequired)
         {
-            this.Invoke(new MessageDelegate(PipelMessageReceived), message);
+            this.Invoke(new MessageDelegate(PipeMessageReceived), message);
         }
         else
         {
             PipeCommand cm = PipeCommand.GetCommand(message);
 
-            if(cm.Type == PipeMessageTypes.FotoCek)
-            {
-                List<int> i = cm.ConvertLoad<List<int>>();
-                txtMessages.AppendText(DateTime.Now.ToLongTimeString() + ":(Object) " + cm.Load + Environment.NewLine);
-            }
-            else if(cm.Type == PipeMessageTypes.MesajGoster)
-            {
+            if(cm.Type == PipeMessageTypes.TakePhoto)
+                txtMessages.AppendText(DateTime.Now.ToLongTimeString() + ":(Object) " + cm.ConvertLoad<List<int>>() + Environment.NewLine);
+            else if(cm.Type == PipeMessageTypes.ShowMessage)
                 txtMessages.AppendText(DateTime.Now.ToLongTimeString() + ":(Text) " + cm.Load + Environment.NewLine);
-            }
         }
     }
     catch(Exception ex)
     {
         txtMessages.AppendText(ex.Message + Environment.NewLine);
     }
-        }
+}
 ```
 
 To stop:
