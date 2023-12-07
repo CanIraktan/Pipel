@@ -23,8 +23,8 @@ In order to process incoming messages, you need to connect the event to the appr
 PipelEngine.Receive += PipelMessageReceived;
 ```
 
+Receive Method Sample (PipeCommand is a custom object used in the sample application)
 ```csharp
-// Receive Method Sample (PipeCommand is a custom object used in the sample application)
 private void PipelMessageReceived(PipelMessage message)
 {
     try
