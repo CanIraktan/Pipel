@@ -21,7 +21,9 @@ PipelEngine.Start(txtServer.Text);
 In order to process incoming messages, you need to connect the event to the appropriate method:
 ```csharp
 PipelEngine.Receive += PipelMessageReceived;
+'''
 
+```csharp
 // Receive Method Sample (PipeCommand is a custom object used in the sample application)
 private void PipelMessageReceived(PipelMessage message)
 {
