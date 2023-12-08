@@ -15,7 +15,7 @@ Library that allows communication between applications on the same computer with
 To use Pipel, simply run a static method with the name parameter:
 
 ```csharp
-PipelEngine.Start(txtServer.Text);
+PipelEngine.Start("pipe_name");
 ```
 
 In order to process incoming messages, you need to connect the event to the appropriate method:
@@ -85,4 +85,4 @@ Performance tests have not yet been carried out
 
 ## License
 Copyright (c) 2023 Can Iraktan. All rights reserved  
-This repository is licensed under  MIT License - see [`License`](LICENSE) for more details.
+This repository is licensed under  MIT License - see [`License`](License.txt) for more details.
